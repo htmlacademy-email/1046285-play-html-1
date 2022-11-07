@@ -5,8 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta content="telephone=no" name="format-detection" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="x-apple-disable-message-reformatting" />
     <title>HTML Academy: PlayHTML. Акция</title>
-    <style>
+    <!--[if (mso 16)]>
+      <style type="text/css">
+        a {text-decoration: none;}
+      </style>
+    <![endif]-->
+    <!--[if gte mso 9]>
+      <style>sup { font-size: 100% !important; }</style>
+    <![endif]-->
+    <!--[if gte mso 9]>
+      <xml>
+          <o:OfficeDocumentSettings>
+          <o:AllowPNG></o:AllowPNG>
+          <o:PixelsPerInch>96</o:PixelsPerInch>
+          </o:OfficeDocumentSettings>
+      </xml>
+    <![endif]-->
+    <style type="text/css">
       @font-face {
         font-family: 'Trebuchet MS';
         src: url('TrebuchetMS.eot');
@@ -25,6 +42,29 @@
         url('TrebuchetMS-Bold.ttf') format('truetype');
         font-weight: normal;
         font-style: normal;
+      }
+
+      @media only screen and (max-width:600px) {
+        .header {
+          padding-top: 24px !important;
+        }
+
+        .header-socials {
+          max-width: 240px !important;
+        }
+
+        .logo {
+          max-width: 140px !important;
+        }
+
+        #outlook a {
+          padding: 0;
+        }
+      
+        .button {
+          mso-style-priority: 100 !important;
+          text-decoration: none !important;
+        }
       }
     </style>
   </head>
@@ -48,7 +88,7 @@
               <!-- HEADER S -->
               <tr>
                 <td>
-                  <table width="100%" style="padding-top: 52px; padding-right: 32px; padding-bottom: 12px; padding-left: 32px; mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0px;" cellspacing="0" cellpadding="0" border="0">
+                  <table class="header" width="100%" style="padding-top: 52px; padding-right: 32px; padding-bottom: 12px; padding-left: 32px; mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0px;" cellspacing="0" cellpadding="0" border="0">
                     <tr>
                       <td align="center" style="font-size: 0; direction: rtl;">
                         <!--[if mso]>
@@ -56,7 +96,7 @@
                           <tr>
                             <td width="268" style="vertical-align:top; font-size:0; line-height:0; dir="ltr">
                               <![endif]-->
-                              <div align="center" style="display:inline-block; padding-bottom: 24px; max-width:268px; vertical-align:top; text-align: right; width: 100%; direction: ltr;">
+                              <div class="header-socials" align="center" style="display:inline-block; padding-bottom: 24px; max-width:268px; vertical-align:top; text-align: right; width: 100%; direction: ltr;">
 
                                 <table width="100%" cellspacing="0" cellpadding="0" border="0">
                                   <tr>
@@ -104,13 +144,13 @@
                             </td>
                             <td width="268" style="vertical-align:top; font-size:0; line-height:0; text-align: rigth;" dir="ltr">
                               <![endif]-->
-                              <div align="center" style="display:inline-block; padding-bottom: 24px; max-width:268px; vertical-align:top;width: 100%; text-align: left; direction: ltr;">
+                              <div class="logo" align="center" style="display:inline-block; padding-bottom: 24px; max-width:268px; vertical-align:top;width: 100%; text-align: left; direction: ltr;">
 
                                 <table width="100%" cellspacing="0" cellpadding="0" border="0">
                                   <tr>
                                     <td>
                                       <a href="https://htmlacademy.ru/" target="_blank" title="На главную PlayHTML">
-                                        <img class="logo" src="https://raw.githubusercontent.com/chugaev101/1046285-play-html-1/module2-task2/1-invitation/img/logo.png" width="140" height="24" style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic" alt="PlayHTML" />
+                                        <img class="logo-img" src="https://raw.githubusercontent.com/chugaev101/1046285-play-html-1/module2-task2/1-invitation/img/logo.png" width="140" height="24" style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic" alt="PlayHTML" />
                                       </a>
                                     </td>
                                   </tr>
@@ -270,7 +310,7 @@
                                                           </tr>
                                                           <tr>
                                                             <td height="37" align="center">
-                                                              <a style="background-color: #0B379B; border-style: solid; border-width: 8px 16px; border-color: #0B379B; border-radius: 5px; font-family: 'Trebuchet MS', 'Tahoma', sans-serif; font-weight: 400; font-size: 18px; line-height: 21px; color: #ffffff; text-align: center; text-decoration: none; -webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;" href="#" target="_blank" title="Записаться на курс">
+                                                              <a class="button" style="background-color: #0B379B; border-style: solid; border-width: 8px 16px; border-color: #0B379B; border-radius: 5px; font-family: 'Trebuchet MS', 'Tahoma', sans-serif; font-weight: 400; font-size: 18px; line-height: 21px; color: #ffffff; text-align: center; text-decoration: none; -webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;" href="#" target="_blank" title="Записаться на курс">
                                                                 Записаться на курс
                                                               </a>
                                                             </td>
@@ -319,7 +359,7 @@
                                                           </tr>
                                                           <tr>
                                                             <td height="37" align="center">
-                                                              <a style="background-color: #0B379B; border-style: solid; border-width: 8px 16px; border-color: #0B379B; border-radius: 5px; font-family: 'Trebuchet MS', 'Tahoma', sans-serif; font-weight: 400; font-size: 18px; line-height: 21px; color: #ffffff; text-align: center; text-decoration: none; -webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;" href="#" target="_blank" title="Записаться на курс">
+                                                              <a class="button" style="background-color: #0B379B; border-style: solid; border-width: 8px 16px; border-color: #0B379B; border-radius: 5px; font-family: 'Trebuchet MS', 'Tahoma', sans-serif; font-weight: 400; font-size: 18px; line-height: 21px; color: #ffffff; text-align: center; text-decoration: none; -webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;" href="#" target="_blank" title="Записаться на курс">
                                                                 Записаться на курс
                                                               </a>
                                                             </td>
@@ -386,7 +426,7 @@
                                                           </tr>
                                                           <tr>
                                                             <td height="37" align="center">
-                                                              <a style="background-color: #0B379B; border-style: solid; border-width: 8px 16px; border-color: #0B379B; border-radius: 5px; font-family: 'Trebuchet MS', 'Tahoma', sans-serif; font-weight: 400; font-size: 18px; line-height: 21px; color: #ffffff; text-align: center; text-decoration: none; -webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;" href="#" target="_blank" title="Записаться на курс">
+                                                              <a class="button" style="background-color: #0B379B; border-style: solid; border-width: 8px 16px; border-color: #0B379B; border-radius: 5px; font-family: 'Trebuchet MS', 'Tahoma', sans-serif; font-weight: 400; font-size: 18px; line-height: 21px; color: #ffffff; text-align: center; text-decoration: none; -webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;" href="#" target="_blank" title="Записаться на курс">
                                                                 Записаться на курс
                                                               </a>
                                                             </td>
@@ -435,7 +475,7 @@
                                                           </tr>
                                                           <tr>
                                                             <td height="37" align="center">
-                                                              <a style="background-color: #0B379B; border-style: solid; border-width: 8px 16px; border-color: #0B379B; border-radius: 5px; font-family: 'Trebuchet MS', 'Tahoma', sans-serif; font-weight: 400; font-size: 18px; line-height: 21px; color: #ffffff; text-align: center; text-decoration: none; -webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;" href="#" target="_blank" title="Записаться на курс">
+                                                              <a class="button" style="background-color: #0B379B; border-style: solid; border-width: 8px 16px; border-color: #0B379B; border-radius: 5px; font-family: 'Trebuchet MS', 'Tahoma', sans-serif; font-weight: 400; font-size: 18px; line-height: 21px; color: #ffffff; text-align: center; text-decoration: none; -webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;" href="#" target="_blank" title="Записаться на курс">
                                                                 Записаться на курс
                                                               </a>
                                                             </td>
@@ -536,7 +576,7 @@
                                               </tr>
                                               <tr>
                                                 <td height="37">
-                                                  <a style="background-color: #FF4B33; border-style: solid; border-width: 8px 16px; border-color: #FF4B33; border-radius: 5px; font-family: 'Trebuchet MS', 'Tahoma', sans-serif; font-weight: 400; font-size: 18px; line-height: 21px; color: #ffffff; text-align: center; text-decoration: none; -webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;" href="#" target="_blank" title="Записаться на курс">
+                                                  <a class="button" style="background-color: #FF4B33; border-style: solid; border-width: 8px 16px; border-color: #FF4B33; border-radius: 5px; font-family: 'Trebuchet MS', 'Tahoma', sans-serif; font-weight: 400; font-size: 18px; line-height: 21px; color: #ffffff; text-align: center; text-decoration: none; -webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;" href="#" target="_blank" title="Записаться на курс">
                                                     Записаться на курс
                                                   </a>
                                                 </td>
@@ -609,7 +649,7 @@
                                                           </tr>
                                                           <tr>
                                                             <td align="center" height="37">
-                                                              <a style="background-color: #FF4B33; border-style: solid; border-width: 8px 16px; border-color: #FF4B33; border-radius: 5px; font-family: 'Trebuchet MS', 'Tahoma', sans-serif; font-weight: 400; font-size: 18px; line-height: 21px; color: #ffffff; text-align: center; text-decoration: none; -webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;" href="#" target="_blank" title="Записаться на курс" href="#" target="_blank" title="Записаться на курс">
+                                                              <a class="button" style="background-color: #FF4B33; border-style: solid; border-width: 8px 16px; border-color: #FF4B33; border-radius: 5px; font-family: 'Trebuchet MS', 'Tahoma', sans-serif; font-weight: 400; font-size: 18px; line-height: 21px; color: #ffffff; text-align: center; text-decoration: none; -webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;" href="#" target="_blank" href="#" target="_blank" title="Записаться на курс">
                                                                 Записаться
                                                               </a>
                                                             </td>
@@ -642,7 +682,7 @@
                                                           </tr>
                                                           <tr>
                                                             <td align="center" height="37">
-                                                              <a style="background-color: #FF4B33; border-style: solid; border-width: 8px 16px; border-color: #FF4B33; border-radius: 5px; font-family: 'Trebuchet MS', 'Tahoma', sans-serif; font-weight: 400; font-size: 18px; line-height: 21px; color: #ffffff; text-align: center; text-decoration: none; -webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;" href="#" target="_blank" title="Записаться на курс" href="#" target="_blank" title="Записаться на курс">
+                                                              <a class="button" style="background-color: #FF4B33; border-style: solid; border-width: 8px 16px; border-color: #FF4B33; border-radius: 5px; font-family: 'Trebuchet MS', 'Tahoma', sans-serif; font-weight: 400; font-size: 18px; line-height: 21px; color: #ffffff; text-align: center; text-decoration: none; -webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;" href="#" target="_blank" href="#" target="_blank" title="Записаться на курс">
                                                                 Записаться
                                                               </a>
                                                             </td>
@@ -675,7 +715,7 @@
                                                           </tr>
                                                           <tr>
                                                             <td align="center" height="37">
-                                                              <a style="background-color: #FF4B33; border-style: solid; border-width: 8px 16px; border-color: #FF4B33; border-radius: 5px; font-family: 'Trebuchet MS', 'Tahoma', sans-serif; font-weight: 400; font-size: 18px; line-height: 21px; color: #ffffff; text-align: center; text-decoration: none; -webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;" href="#" target="_blank" title="Записаться на курс" href="#" target="_blank" title="Записаться на курс">
+                                                              <a class="button" style="background-color: #FF4B33; border-style: solid; border-width: 8px 16px; border-color: #FF4B33; border-radius: 5px; font-family: 'Trebuchet MS', 'Tahoma', sans-serif; font-weight: 400; font-size: 18px; line-height: 21px; color: #ffffff; text-align: center; text-decoration: none; -webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;" href="#" target="_blank" href="#" target="_blank" title="Записаться на курс">
                                                                 Записаться
                                                               </a>
                                                             </td>
@@ -711,7 +751,7 @@
                                 </tr>
                                 <tr>
                                   <td align="center" height="37">
-                                    <a style="background-color: #0B379B; border-style: solid; border-width: 8px 16px; border-color: #0B379B; border-radius: 5px; font-family: 'Trebuchet MS', 'Tahoma', sans-serif; font-weight: 400; font-size: 18px; line-height: 21px; color: #ffffff; text-align: center; text-decoration: none; -webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;" href="#" target="_blank" title="Записаться на курс" href="https://htmlacademy.ru/" target="_blank" title="Перейти ко всем курсам">
+                                    <a class="button" style="background-color: #0B379B; border-style: solid; border-width: 8px 16px; border-color: #0B379B; border-radius: 5px; font-family: 'Trebuchet MS', 'Tahoma', sans-serif; font-weight: 400; font-size: 18px; line-height: 21px; color: #ffffff; text-align: center; text-decoration: none; -webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;" href="#" target="_blank" href="https://htmlacademy.ru/" target="_blank" title="Перейти ко всем курсам">
                                       Все курсы
                                     </a>
                                   </td>
